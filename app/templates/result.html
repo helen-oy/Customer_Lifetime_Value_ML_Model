@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title> ML Flask Application </title>
+    <title>Prediction Result</title>
 </head>
-
 <body>
-<h1> Results </h1>
+    <h2>Prediction Details</h2>
+    <p><strong>Recency:</strong> {{ recency }}</p>
+    <p><strong>Frequency:</strong> {{ frequency }}</p>
+    <p><strong>Monetary:</strong> ${{ "%.2f"|format(monetary) }}</p>
+    <h3>Predicted LTV Cluster: {{ cluster }}</h3>
+    <a href="/">Make Another Prediction</a>
 </body>
-
 </html>
